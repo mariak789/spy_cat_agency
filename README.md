@@ -4,7 +4,7 @@ The system manages **spy cats**, their **missions**, and assigned **targets**, i
 
 ---
 
-## 🚀 Features
+## Features
 
 - CRUD for **Spy Cats**
 - CRUD for **Missions** and **Targets**
@@ -15,7 +15,7 @@ The system manages **spy cats**, their **missions**, and assigned **targets**, i
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Python 3.13+**
 - **Django 5**
@@ -25,7 +25,7 @@ The system manages **spy cats**, their **missions**, and assigned **targets**, i
 
 ---
 
-## 🧠 Setup & Run
+## Setup & Run
 
 Clone the repository and install dependencies:
 ```bash
@@ -74,7 +74,6 @@ pytest -v
 To simplify testing, the repository includes a ready-to-import Postman collection:
 postman_collection.json (located in the project root).
 
-How to use:
 - open Postman
 - click import -> File, then select file postman_collection.json
 - the collection will appear in your workspace
