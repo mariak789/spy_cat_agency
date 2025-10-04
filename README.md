@@ -51,14 +51,14 @@ Visit:
 ## API Overview: 
 
 Endpoints:
-	•	POST /api/cats/ — create a new spy cat
-	•	GET /api/cats/ — list all cats
-	•	PATCH /api/cats/{id}/ — update a cat’s salary
-	•	DELETE /api/cats/{id}/ — remove a cat
-	•	POST /api/missions/ — create a new mission (with 1–3 targets)
-	•	POST /api/missions/{id}/assign-cat/ — assign a cat to a mission
-	•	PATCH /api/targets/{id}/ — update notes or mark a target as completed
-	•	GET /api/missions/ — list all missions
+- POST /api/cats/ — create a new spy cat
+- GET /api/cats/ — list all cats
+- PATCH /api/cats/{id}/ — update a cat’s salary
+- DELETE /api/cats/{id}/ — remove a cat
+- POST /api/missions/ — create a new mission (with 1–3 targets)
+- POST /api/missions/{id}/assign-cat/ — assign a cat to a mission
+- PATCH /api/targets/{id}/ — update notes or mark a target as completed
+- GET /api/missions/ — list all missions
 
 ### Breed validation:
 Cat breeds are validated via TheCatApi. 
