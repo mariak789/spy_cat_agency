@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Spy Cat Agency API",
+    "_postman_id": "f1c5b6f0-2d3d-4d91-9f6c-1a2b9e8c0001",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Cats",
+      "request": { "method": "GET", "url": "http://127.0.0.1:8000/api/cats/" }
+    },
+    {
+      "name": "Create Cat",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "http://127.0.0.1:8000/api/cats/",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Mr. Whiskers\",\n  \"years_of_experience\": 3,\n  \"breed\": \"Bengal\",\n  \"salary\": \"5000.00\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Create Mission with Targets",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "http://127.0.0.1:8000/api/missions/",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cat\": null,\n  \"targets\": [\n    {\"name\": \"Target A\", \"country\": \"Italy\", \"notes\": \"cafe\", \"complete\": false},\n    {\"name\": \"Target B\", \"country\": \"France\", \"notes\": \"\", \"complete\": false}\n  ]\n}"
+        }
+      }
+    },
+    {
+      "name": "List Missions",
+      "request": { "method": "GET", "url": "http://127.0.0.1:8000/api/missions/" }
+    },
+    {
+      "name": "Assign Cat to Mission",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "http://127.0.0.1:8000/api/missions/1/assign-cat/",
+        "body": { "mode": "raw", "raw": "{ \"cat_id\": 1 }" }
+      }
+    },
+    {
+      "name": "Get Target",
+      "request": { "method": "GET", "url": "http://127.0.0.1:8000/api/targets/1/" }
+    },
+    {
+      "name": "Update Target (complete)",
+      "request": {
+        "method": "PATCH",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "http://127.0.0.1:8000/api/targets/1/",
+        "body": { "mode": "raw", "raw": "{ \"complete\": true }" }
+      }
+    }
+  ]
+}
